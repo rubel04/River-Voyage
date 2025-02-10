@@ -1,0 +1,167 @@
+[
+  {
+    "id": 1,
+    "title": "Amazon River Expedition",
+    "image": "https://example.com/amazon-river.jpg",
+    "category": "River Adventures",
+    "shortDescription": "Explore the depths of the Amazon River with guided eco-friendly boat tours.",
+    "adventureCost": 450,
+    "bookingAvailability": "Available",
+    "location": "Amazon Rainforest, Brazil",
+    "duration": "5 Days",
+    "adventureLevel": "Intermediate",
+    "includedItems": [
+      "Guided Tour",
+      "Life Jackets",
+      "Camping Gear",
+      "Meals",
+      "Photography"
+    ],
+    "ecoFriendlyFeatures": [
+      "Solar-Powered Boats",
+      "Zero Plastic Usage",
+      "Eco-Friendly Camps"
+    ],
+    "maxGroupSize": 10,
+    "specialInstructions": [
+      "Bring insect repellent",
+      "Wear breathable clothes",
+      "Respect wildlife"
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Grand Canyon Rafting",
+    "image": "https://example.com/grand-canyon-rafting.jpg",
+    "category": "River Adventures",
+    "shortDescription": "Experience the thrill of rafting through the mighty Colorado River.",
+    "adventureCost": 600,
+    "bookingAvailability": "Available",
+    "location": "Grand Canyon, USA",
+    "duration": "3 Days",
+    "adventureLevel": "Advanced",
+    "includedItems": ["Rafting Gear", "Helmet", "Meals", "Safety Guide"],
+    "ecoFriendlyFeatures": [
+      "Leave No Trace Policy",
+      "Sustainable Lodging",
+      "Biodegradable Supplies"
+    ],
+    "maxGroupSize": 8,
+    "specialInstructions": [
+      "Must know basic swimming",
+      "Wear water-resistant shoes",
+      "Follow safety guidelines"
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Nile River Cultural Cruise",
+    "image": "https://example.com/nile-cruise.jpg",
+    "category": "River Adventures",
+    "shortDescription": "Sail through the historic Nile River and experience Egyptian culture.",
+    "adventureCost": 700,
+    "bookingAvailability": "Limited",
+    "location": "Cairo to Aswan, Egypt",
+    "duration": "7 Days",
+    "adventureLevel": "Beginner",
+    "includedItems": [
+      "Luxury Boat Stay",
+      "Local Cuisine",
+      "Tour Guide",
+      "Cultural Shows"
+    ],
+    "ecoFriendlyFeatures": [
+      "Solar Energy Usage",
+      "Organic Meals",
+      "Eco-Conscious Travel"
+    ],
+    "maxGroupSize": 15,
+    "specialInstructions": [
+      "Respect local traditions",
+      "Bring sun protection",
+      "Pack light clothing"
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Ganges River Spiritual Journey",
+    "image": "https://example.com/ganges-journey.jpg",
+    "category": "River Adventures",
+    "shortDescription": "A serene boat journey along the sacred Ganges River with yoga and meditation.",
+    "adventureCost": 350,
+    "bookingAvailability": "Available",
+    "location": "Varanasi, India",
+    "duration": "4 Days",
+    "adventureLevel": "Beginner",
+    "includedItems": [
+      "Meditation Guide",
+      "Yoga Sessions",
+      "Traditional Meals",
+      "Boat Tour"
+    ],
+    "ecoFriendlyFeatures": [
+      "Plastic-Free Zone",
+      "Vegan Meal Options",
+      "Eco-Tourism Support"
+    ],
+    "maxGroupSize": 12,
+    "specialInstructions": [
+      "Maintain silence during meditation",
+      "Wear traditional attire",
+      "Avoid polluting water"
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Zambezi River Whitewater Rafting",
+    "image": "https://example.com/zambezi-rafting.jpg",
+    "category": "River Adventures",
+    "shortDescription": "Conquer the wild rapids of the Zambezi River near Victoria Falls.",
+    "adventureCost": 500,
+    "bookingAvailability": "Available",
+    "location": "Victoria Falls, Zambia/Zimbabwe",
+    "duration": "2 Days",
+    "adventureLevel": "Advanced",
+    "includedItems": [
+      "Rafting Equipment",
+      "Safety Briefing",
+      "Meals",
+      "Camping Gear"
+    ],
+    "ecoFriendlyFeatures": [
+      "Sustainable Rafting Practices",
+      "Eco-Friendly Accommodations",
+      "Waste Management"
+    ],
+    "maxGroupSize": 6,
+    "specialInstructions": [
+      "Must be physically fit",
+      "Wear water-resistant clothing",
+      "Be prepared for intense rapids"
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Mekong River Kayaking Adventure",
+    "image": "https://example.com/mekong-kayaking.jpg",
+    "category": "River Adventures",
+    "shortDescription": "Paddle through the scenic beauty of the Mekong River and explore floating villages.",
+    "adventureCost": 400,
+    "bookingAvailability": "Limited",
+    "location": "Mekong Delta, Vietnam",
+    "duration": "3 Days",
+    "adventureLevel": "Intermediate",
+    "includedItems": ["Kayaks", "Safety Gear", "Local Guide", "Eco-Lodging"],
+    "ecoFriendlyFeatures": [
+      "Zero Waste Travel",
+      "Community-Based Tourism",
+      "Organic Food"
+    ],
+    "maxGroupSize": 10,
+    "specialInstructions": [
+      "Respect local cultures",
+      "Use reef-safe sunscreen",
+      "Stay hydrated"
+    ]
+  }
+]

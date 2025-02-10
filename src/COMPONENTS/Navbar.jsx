@@ -78,7 +78,7 @@ const Navbar = () => {
         </div>
         <div className="navbar-end">
           <Link to="/login">
-            <button className="px-8 py-3 cursor-pointer border border-[#203F3F] hover:bg-[#203F3F] hover:text-white font-medium text-[#203F3F] transition">
+            <button className="px-4 md:px-8 py-1 md:py-3 cursor-pointer border border-[#203F3F] hover:bg-[#203F3F] hover:text-white font-medium text-[#203F3F] transition">
               Login
             </button>
           </Link>

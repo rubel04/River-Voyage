@@ -4,10 +4,12 @@ import Navbar from "../COMPONENTS/Navbar";
 
 const MainLayout = () => {
     return (
-        <div className="w-11/12 mx-auto">
+        <div className="">
+            <main className="w-11/12 mx-auto">
             <Navbar></Navbar>
             <Home></Home>
             <Outlet></Outlet>
+            </main>
         </div>
     );
 };
