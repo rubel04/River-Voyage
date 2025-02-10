@@ -38,7 +38,7 @@ const Navbar = () => {
   return (
     <div>
       <nav className="flex justify-center mt-3">
-        <p className="text-[#2cc9c9] font-medium">Discover Hidden River Treasures – Start Your Journey!</p>
+        <p className="text-[#389d9d] font-medium">Discover Hidden River Treasures – Start Your Journey!</p>
       </nav>
       <div className="border border-gray-100 my-4"></div>
       <div className="navbar">
