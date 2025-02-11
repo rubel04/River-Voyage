@@ -1,6 +1,7 @@
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
 
 const Navbar = () => {
+
   const navlinks = (
     <>
       <li>
@@ -35,12 +36,19 @@ const Navbar = () => {
       </li>
     </>
   );
+  const { pathname } = useLocation();
   return (
     <div>
-      <nav className="flex justify-center mt-3">
-        <p className="text-[#389d9d] font-medium">Discover Hidden River Treasures – Start Your Journey!</p>
-      </nav>
-      <div className="border border-gray-100 my-4"></div>
+      {pathname === "/" && (
+        <div>
+          <nav className="flex justify-center mt-3">
+            <p className="text-purple-500 font-medium">
+              Discover Hidden River Treasures – Start Your Journey!
+            </p>
+          </nav>
+          <div className="border border-gray-100 my-4"></div>
+        </div>
+      )}
       <div className="navbar">
         <div className="navbar-start">
           <div className="dropdown">
@@ -89,32 +97,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
-{
-  /* <div className="navbar-end">
-          {user ? (
-            <div className="flex items-center space-x-4">
-              <div className="border-2 border-[#ffb507] cursor-pointer rounded-full">
-                <img
-                  className="w-10 h-10 m-1 object-cover rounded-full"
-                  src={user?.photoURL}
-                  alt=""
-                />
-              </div>
-              <Link to="/">
-                <button
-                  onClick={handleLogout}
-                  className="px-8 py-3 cursor-pointer rounded-2xl font-medium text-white bg-gradient-to-r from-[#00bcf7] to-[#0076ed]"
-                >
-                  Log Out
-                </button>
-              </Link>
-            </div>
-          ) : (
-            <Link to="/login">
-              <button className="px-8 py-3 cursor-pointer rounded-2xl font-medium text-white bg-gradient-to-r from-[#00bcf7] to-[#0076ed] )">
-                Login
-              </button>
-            </Link>
-          )}
-        </div> */
-}
+
