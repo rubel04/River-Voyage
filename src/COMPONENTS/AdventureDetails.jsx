@@ -28,7 +28,7 @@ const AdventureDetails = () => {
         </p>
       </div>
       <div>
-        <img className="w-full h-[500px] object-cover my-4" src={image} alt={`${title} img`} />
+        <img className="w-full md:h-[500px] object-cover my-4" src={image} alt={`${title} img`} />
       </div>
       <p className="text-lg font-semibold mt-4 mb-2">
         Description: <span className="text-gray-400 text-base">{shortDescription}</span>

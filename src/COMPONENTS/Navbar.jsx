@@ -1,20 +1,20 @@
 import { useContext } from "react";
 import { Link, NavLink, useLocation } from "react-router-dom";
 import { AuthContext } from "../providers/AuthProvider";
-import logo from '../assets/logo.png'
+import logo from "../assets/logo.png";
 
 const Navbar = () => {
-  const { user,logOutUser,setUser } = useContext(AuthContext);
+  const { user, logOutUser, setUser } = useContext(AuthContext);
   const handleLogOut = () => {
     logOutUser()
-    .then(() => {
-      setUser(null);
-      alert('user logout successfully');
-    })
-    .catch(error =>{
-      console.log(error.code);
-    })
-  }
+      .then(() => {
+        setUser(null);
+        alert("user logout successfully");
+      })
+      .catch((error) => {
+        console.log(error.code);
+      });
+  };
   const navlinks = (
     <>
       <li>
@@ -35,16 +35,6 @@ const Navbar = () => {
           to="/updateProfile"
         >
           Update Profile
-        </NavLink>
-      </li>
-      <li>
-        <NavLink
-          className={({ isActive }) =>
-            isActive ? "text-purple-500" : "text-white"
-          }
-          to="/UserProfile"
-        >
-          User Profile
         </NavLink>
       </li>
     </>
@@ -99,10 +89,27 @@ const Navbar = () => {
         </div>
         <div className="navbar-end">
           {user ? (
-            // bg-[#203F3F] text-white hover:bg-white hover:text-[#203F3F] transition
-            <button onClick={handleLogOut} className="px-4 md:px-8 py-1 md:py-3 font-medium cursor-pointer  bg-white text-[#203F3F] hover:bg-[#203F3F] hover:text-white transition duration-300">
-              Log Out
-            </button>
+            <div className="flex items-center gap-4">
+              <div className="dropdown dropdown-hover">
+                <div tabIndex={0} role="button" className="">
+                  <img className="w-12 h-12 border-2 cursor-pointer rounded-full" src={user?.photoURL} alt="user-image" />
+                </div>
+                <ul
+                  tabIndex={0}
+                  className="dropdown-content menu bg-black rounded-box z-[1] w-32"
+                >
+                  <li>
+                    <p className="text-base font-medium">{user?.displayName}</p>
+                  </li>
+                </ul>
+              </div>
+              <button
+                onClick={handleLogOut}
+                className="px-4 md:px-8 py-1 md:py-3 font-medium cursor-pointer  bg-white text-[#203F3F] hover:bg-[#203F3F] hover:text-white transition duration-300"
+              >
+                Log Out
+              </button>
+            </div>
           ) : (
             <Link to="/login">
               <button className="px-4 md:px-8 py-1 md:py-3 font-medium cursor-pointer  bg-white text-purple-500 hover:bg-purple-500 hover:text-white transition duration-300">

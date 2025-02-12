@@ -3,7 +3,6 @@ import MainLayout from "../MainLayout/MainLayout";
 import ErrorPage from "../COMPONENTS/ErrorPage";
 import Home from "../COMPONENTS/Home";
 import AdventureDetails from "../COMPONENTS/AdventureDetails";
-import UserProfile from "../COMPONENTS/UserProfile";
 import UpdateProfile from "../COMPONENTS/UpdateProfile";
 import Login from "../COMPONENTS/Login";
 import Register from "../COMPONENTS/Register";
@@ -34,10 +33,6 @@ const router = createBrowserRouter([
           );
           return targetAdventure;
         },
-      },
-      {
-        path: "/userProfile",
-        element: <UserProfile />,
       },
       {
         path: "/updateProfile",
