@@ -5,7 +5,7 @@ const AdventureCard = (props) => {
     return (
         <div className="card rounded-none bg-gray-900 hover:shadow shadow-gray-700 transition-transform duration-700 hover:scale-105">
       <figure className="h-full ">
-        <img className="h-full w-full" src={adventure.image} alt="" />
+        <img className="h-[200px] md:h-[300px] w-full" src={adventure.image} alt="" />
       </figure>
       <div className="card-body  transition duration-500">
         <h2 className="card-title text-xl">{adventure.title}</h2>

@@ -1,4 +1,5 @@
 import { useLoaderData } from "react-router-dom";
+import Swal from "sweetalert2";
 
 const AdventureDetails = () => {
   const adventure = useLoaderData();
@@ -28,10 +29,15 @@ const AdventureDetails = () => {
         </p>
       </div>
       <div>
-        <img className="w-full md:h-[500px] object-cover my-4" src={image} alt={`${title} img`} />
+        <img
+          className="w-full md:h-[500px] object-cover my-4"
+          src={image}
+          alt={`${title} img`}
+        />
       </div>
       <p className="text-lg font-semibold mt-4 mb-2">
-        Description: <span className="text-gray-400 text-base">{shortDescription}</span>
+        Description:{" "}
+        <span className="text-gray-400 text-base">{shortDescription}</span>
       </p>
       <div className="space-y-4">
         <div>
@@ -93,6 +99,23 @@ const AdventureDetails = () => {
           </ul>
         </div>
       </div>
+      <button
+        onClick={() => {
+          const currentHour = new Date().getHours()
+
+          if (currentHour >= 10 && currentHour < 20) {
+            window.open("https://meet.google.com/", "_blank");
+          } else {
+            Swal.fire({
+              text: "Experts are available from 10:00 AM to 8:00 PM.",
+              icon: "warning",
+            });
+          }
+        }}
+        className="px-4 block m-auto mt-8 md:px-8 py-1 md:py-3 font-medium cursor-pointer  hover:bg-white hover:text-purple-500 bg-purple-500 text-white transition duration-300"
+      >
+        Talk With Expert
+      </button>
     </div>
   );
 };

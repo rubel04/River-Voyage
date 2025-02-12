@@ -7,6 +7,7 @@ import UpdateProfile from "../COMPONENTS/UpdateProfile";
 import Login from "../COMPONENTS/Login";
 import Register from "../COMPONENTS/Register";
 import PrivateRoute from "./PrivateRoute";
+import MyProfile from "../COMPONENTS/MyProfile";
 
 const router = createBrowserRouter([
   {
@@ -33,6 +34,14 @@ const router = createBrowserRouter([
           );
           return targetAdventure;
         },
+      },
+      {
+        path: "/myProfile",
+        element: (
+          <PrivateRoute>
+            <MyProfile />
+          </PrivateRoute>
+        ),
       },
       {
         path: "/updateProfile",

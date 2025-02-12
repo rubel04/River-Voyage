@@ -1,6 +1,7 @@
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { useContext, useState } from "react";
 import { AuthContext } from "../providers/AuthProvider";
+import { FcGoogle } from "react-icons/fc";
 
 const Login = () => {
   const { loginUser, loginUserWithGoogle, setUser } = useContext(AuthContext);
@@ -50,8 +51,9 @@ const Login = () => {
         </h2>
         <button
           onClick={handleGoogleLogin}
-          className="px-4 w-full md:px-8 py-1 md:py-3 font-medium cursor-pointer  bg-white text-purple-500 hover:bg-purple-500 hover:text-white transition duration-300"
+          className="flex items-center justify-center gap-2 px-4 w-full md:px-8 py-1 md:py-3 font-medium cursor-pointer  bg-white text-purple-500 hover:bg-purple-500 hover:text-white transition duration-300"
         >
+          <FcGoogle />
           Google
         </button>
         <p className="uppercase text-sm text-center text-gray-400 font-medium">
@@ -78,6 +80,9 @@ const Login = () => {
               placeholder="******"
             />
           </div>
+          <label className="label">
+            <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
+          </label>
           {success && <p className="text-[#00bcf7]">{success && success}</p>}
           {error && <p className="text-red-500">{error && error}</p>}
           <button
@@ -87,7 +92,7 @@ const Login = () => {
           </button>
 
           <p>
-            New to RiverVoyage?{" "}
+            New to River Voyage?{" "}
             <Link
               to="/register"
               className="text-purple-500 font-medium underline"

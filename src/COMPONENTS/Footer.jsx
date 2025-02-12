@@ -42,7 +42,7 @@ const Footer = () => {
           </div>
         </nav>
       </footer>
-      <footer className="footer footer-center  text-base-content p-4">
+      <footer className="footer footer-center p-4 text-gray-300">
         <aside>
           <p>
             © Copyright {new Date().getFullYear()} - All right reserved by

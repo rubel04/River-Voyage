@@ -37,6 +37,16 @@ const Navbar = () => {
           Update Profile
         </NavLink>
       </li>
+      <li>
+        <NavLink
+          className={({ isActive }) =>
+            isActive ? "text-purple-500" : "text-white"
+          }
+          to="/myProfile"
+        >
+          My Profile
+        </NavLink>
+      </li>
     </>
   );
   const { pathname } = useLocation();
@@ -45,7 +55,7 @@ const Navbar = () => {
       {pathname === "/" && (
         <div>
           <nav className="flex justify-center pt-3">
-            <p className="text-red-400 font-medium">
+            <p className="text-red-500 font-medium animate-pulse">
               Discover Hidden River Treasures – Start Your Journey!
             </p>
           </nav>
@@ -92,7 +102,7 @@ const Navbar = () => {
             <div className="flex items-center gap-4">
               <div className="dropdown dropdown-hover">
                 <div tabIndex={0} role="button" className="">
-                  <img className="w-12 h-12 border-2 cursor-pointer rounded-full" src={user?.photoURL} alt="user-image" />
+                  <img className="w-13 h-13 border-2 cursor-pointer rounded-full" src={user?.photoURL} alt="user-image" />
                 </div>
                 <ul
                   tabIndex={0}
@@ -105,7 +115,7 @@ const Navbar = () => {
               </div>
               <button
                 onClick={handleLogOut}
-                className="px-4 md:px-8 py-1 md:py-3 font-medium cursor-pointer  bg-white text-[#203F3F] hover:bg-[#203F3F] hover:text-white transition duration-300"
+                className="px-4 md:px-8 py-1 md:py-3 font-medium cursor-pointer  bg-white text-purple-500 hover:bg-purple-500 hover:text-white transition duration-300"
               >
                 Log Out
               </button>
