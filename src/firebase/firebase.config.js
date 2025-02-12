@@ -2,12 +2,12 @@ import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCL_LKV9v5CHzxnJB4HqMIg1JYNoCIB1IQ",
-  authDomain: "river-voyage.firebaseapp.com",
-  projectId: "river-voyage",
-  storageBucket: "river-voyage.firebasestorage.app",
-  messagingSenderId: "149306281328",
-  appId: "1:149306281328:web:f42bd14999119aed0bd3b5",
+  apiKey: import.meta.env.VITE_APIKEY,
+  authDomain: import.meta.env.VITE_AUTHDOMAIN,
+  projectId: import.meta.env.VITE_PROJECTID,
+  storageBucket: import.meta.env.VITE_STORAGEBUCKET,
+  messagingSenderId: import.meta.env.VITE_MESSAGINGSENDERID,
+  appId: import.meta.env.VITE_APPID,
 };
 
 const app = initializeApp(firebaseConfig);
