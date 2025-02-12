@@ -81,7 +81,7 @@ const Login = () => {
             />
           </div>
           <label className="label">
-            <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
+            <Link to="/forgotPassword" className="label-text-alt link link-hover">Forgot password?</Link>
           </label>
           {success && <p className="text-[#00bcf7]">{success && success}</p>}
           {error && <p className="text-red-500">{error && error}</p>}
