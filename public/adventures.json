@@ -2,7 +2,7 @@
   {
     "id": 1,
     "title": "Amazon River Expedition",
-    "image": "https://example.com/amazon-river.jpg",
+    "image": "https://res.cloudinary.com/daxjoqam6/image/upload/v1739279286/Amazon_River_Expedition_apumyq.jpg",
     "category": "River Adventures",
     "shortDescription": "Explore the depths of the Amazon River with guided eco-friendly boat tours.",
     "adventureCost": 450,
@@ -32,7 +32,7 @@
   {
     "id": 2,
     "title": "Grand Canyon Rafting",
-    "image": "https://example.com/grand-canyon-rafting.jpg",
+    "image": "https://res.cloudinary.com/daxjoqam6/image/upload/v1739279319/Grand_Canyon_Rafting_v3nbyc.jpg",
     "category": "River Adventures",
     "shortDescription": "Experience the thrill of rafting through the mighty Colorado River.",
     "adventureCost": 600,
@@ -56,7 +56,7 @@
   {
     "id": 3,
     "title": "Nile River Cultural Cruise",
-    "image": "https://example.com/nile-cruise.jpg",
+    "image": "https://res.cloudinary.com/daxjoqam6/image/upload/v1739279318/Nile_River_Cultural_Cruise_krmg3w.jpg",
     "category": "River Adventures",
     "shortDescription": "Sail through the historic Nile River and experience Egyptian culture.",
     "adventureCost": 700,
@@ -85,7 +85,7 @@
   {
     "id": 4,
     "title": "Ganges River Spiritual Journey",
-    "image": "https://example.com/ganges-journey.jpg",
+    "image": "https://res.cloudinary.com/daxjoqam6/image/upload/v1739279319/Ganges_River_Spiritual_Journey_tevbah.jpg",
     "category": "River Adventures",
     "shortDescription": "A serene boat journey along the sacred Ganges River with yoga and meditation.",
     "adventureCost": 350,
@@ -114,7 +114,7 @@
   {
     "id": 5,
     "title": "Zambezi River Whitewater Rafting",
-    "image": "https://example.com/zambezi-rafting.jpg",
+    "image": "https://res.cloudinary.com/daxjoqam6/image/upload/v1739279318/Zambezi_River_Whitewater_Rafting_lugkpb.jpg",
     "category": "River Adventures",
     "shortDescription": "Conquer the wild rapids of the Zambezi River near Victoria Falls.",
     "adventureCost": 500,
@@ -143,7 +143,7 @@
   {
     "id": 6,
     "title": "Mekong River Kayaking Adventure",
-    "image": "https://example.com/mekong-kayaking.jpg",
+    "image": "https://res.cloudinary.com/daxjoqam6/image/upload/v1739279319/Mekong_River_Kayaking_Adventure_ustb5p.jpg",
     "category": "River Adventures",
     "shortDescription": "Paddle through the scenic beauty of the Mekong River and explore floating villages.",
     "adventureCost": 400,

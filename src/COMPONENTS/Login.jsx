@@ -44,20 +44,20 @@ const Login = () => {
   };
   return (
     <div className="flex justify-center mt-16">
-      <div>
+      <div className="space-y-4">
+        <h2 className="uppercase text-2xl flex items-center text-white font-medium">
+          Login With
+        </h2>
+        <button
+          onClick={handleGoogleLogin}
+          className="px-4 w-full md:px-8 py-1 md:py-3 font-medium cursor-pointer  bg-white text-purple-500 hover:bg-purple-500 hover:text-white transition duration-300"
+        >
+          Google
+        </button>
+        <p className="uppercase text-sm text-center text-gray-400 font-medium">
+          OR
+        </p>
         <form onSubmit={handleSubmit} className="space-y-4">
-          <h2 className="uppercase text-2xl flex items-center text-[#203F3F] font-medium">
-            Login With
-          </h2>
-          <button
-            onClick={handleGoogleLogin}
-            className="px-4 md:px-8 py-1 w-full md:py-3 cursor-pointer border border-[#203F3F] hover:bg-[#203F3F] hover:text-white font-medium text-[#203F3F] transition"
-          >
-            Google
-          </button>
-          {/* <p className="bg-[#203F3F] text-center w-5 h-0.5 "></p> */}
-          <p className="uppercase text-sm text-center text-[#203F3F] font-medium">OR</p>
-          {/* <p className="bg-[#203F3F] text-center w-5 h-0.5 "></p> */}
           <div>
             <label>Email</label>
             <br />
@@ -80,33 +80,17 @@ const Login = () => {
           </div>
           {success && <p className="text-[#00bcf7]">{success && success}</p>}
           {error && <p className="text-red-500">{error && error}</p>}
-          <fieldset className="fieldset">
-            <label className="fieldset-label text-lg">
-              <div>
-                <input
-                  type="checkbox"
-                  defaultChecked
-                  className="checkbox mr-2"
-                />
-                Remember me
-                <p className="pl-8 text-sm">
-                  Save my login details for next time
-                </p>
-              </div>
-            </label>
-          </fieldset>
           <button
-            onClick={handleGoogleLogin}
-            className="px-4 md:px-8 py-1 w-full md:py-3 cursor-pointer border border-[#203F3F] bg-[#203F3F] text-white font-medium hover:bg-white hover:text-[#203F3F] transition"
+            className="px-4 md:px-8 py-1 w-full md:py-3 cursor-pointer bg-purple-500 text-white font-medium hover:bg-white hover:text-purple-500 transition duration-300"
           >
             Login
           </button>
 
           <p>
-            Dont Have an Account? Please{" "}
+            New to RiverVoyage?{" "}
             <Link
               to="/register"
-              className="text-[#00bcf7] font-medium hover:underline"
+              className="text-purple-500 font-medium underline"
             >
               Register
             </Link>

@@ -1,4 +1,5 @@
 import Adventures from "./Adventures";
+import Footer from "./Footer";
 import Hero from "./Hero";
 
 function Home() {
@@ -8,6 +9,9 @@ function Home() {
       <section>
         <Adventures></Adventures>
       </section>
+      <footer>
+        <Footer></Footer>
+      </footer>
     </>
   );
 }

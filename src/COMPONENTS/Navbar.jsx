@@ -1,13 +1,26 @@
+import { useContext } from "react";
 import { Link, NavLink, useLocation } from "react-router-dom";
+import { AuthContext } from "../providers/AuthProvider";
+import logo from '../assets/logo.png'
 
 const Navbar = () => {
-
+  const { user,logOutUser,setUser } = useContext(AuthContext);
+  const handleLogOut = () => {
+    logOutUser()
+    .then(() => {
+      setUser(null);
+      alert('user logout successfully');
+    })
+    .catch(error =>{
+      console.log(error.code);
+    })
+  }
   const navlinks = (
     <>
       <li>
         <NavLink
           className={({ isActive }) =>
-            isActive ? "text-[#203F3F]" : "text-[#00232380]"
+            isActive ? "text-purple-500" : "text-white"
           }
           to="/"
         >
@@ -17,7 +30,7 @@ const Navbar = () => {
       <li>
         <NavLink
           className={({ isActive }) =>
-            isActive ? "text-[#203F3F]" : "text-[#00232380]"
+            isActive ? "text-purple-500" : "text-white"
           }
           to="/updateProfile"
         >
@@ -27,7 +40,7 @@ const Navbar = () => {
       <li>
         <NavLink
           className={({ isActive }) =>
-            isActive ? "text-[#203F3F]" : "text-[#00232380]"
+            isActive ? "text-purple-500" : "text-white"
           }
           to="/UserProfile"
         >
@@ -41,12 +54,12 @@ const Navbar = () => {
     <div>
       {pathname === "/" && (
         <div>
-          <nav className="flex justify-center mt-3">
-            <p className="text-purple-500 font-medium">
+          <nav className="flex justify-center pt-3">
+            <p className="text-red-400 font-medium">
               Discover Hidden River Treasures – Start Your Journey!
             </p>
           </nav>
-          <div className="border border-gray-100 my-4"></div>
+          <div className="border border-gray-600 my-4"></div>
         </div>
       )}
       <div className="navbar">
@@ -75,8 +88,8 @@ const Navbar = () => {
               {navlinks}
             </ul>
           </div>
-          <a className="text-2xl cursor-pointer font-bold text-[#203F3F]">
-            RiverVoyage
+          <a className="text-2xl cursor-pointer font-bold text-purple-500 italic">
+            <img className="w-30" src={logo} alt="logo" />
           </a>
         </div>
         <div className="navbar-center hidden lg:flex">
@@ -85,11 +98,18 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="navbar-end">
-          <Link to="/login">
-            <button className="px-4 md:px-8 py-1 md:py-3 cursor-pointer border border-[#203F3F] hover:bg-[#203F3F] hover:text-white font-medium text-[#203F3F] transition">
-              Login
+          {user ? (
+            // bg-[#203F3F] text-white hover:bg-white hover:text-[#203F3F] transition
+            <button onClick={handleLogOut} className="px-4 md:px-8 py-1 md:py-3 font-medium cursor-pointer  bg-white text-[#203F3F] hover:bg-[#203F3F] hover:text-white transition duration-300">
+              Log Out
             </button>
-          </Link>
+          ) : (
+            <Link to="/login">
+              <button className="px-4 md:px-8 py-1 md:py-3 font-medium cursor-pointer  bg-white text-purple-500 hover:bg-purple-500 hover:text-white transition duration-300">
+                Login
+              </button>
+            </Link>
+          )}
         </div>
       </div>
     </div>
@@ -97,4 +117,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-

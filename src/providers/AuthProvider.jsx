@@ -7,7 +7,7 @@ export const AuthContext = createContext(null);
 const AuthProvider = (props) => {
     const {children} = props || {};
     const [user,setUser] = useState(null);
-    const [isLoadig,setIsLoading] = useState(true);
+    const [isLoading,setIsLoading] = useState(true);
     const googleProvider = new GoogleAuthProvider();
 
     const registerUser = (email,password) =>{
@@ -54,7 +54,7 @@ const AuthProvider = (props) => {
         logOutUser,
         user,
         setUser,
-        isLoadig
+        isLoading
     }
     return (
         <AuthContext.Provider value={authData}>
