@@ -37,6 +37,7 @@ https://river-voyage.web.app
 - Sweetalert2
 - React-icons
 - DaisyUI
+- animate.css
 
 ## NPM Packages Used
 
@@ -47,3 +48,4 @@ https://river-voyage.web.app
 - Sweetalert2
 - React-icons
 - DaisyUI
+- animate.css

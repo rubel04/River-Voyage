@@ -5,7 +5,7 @@ import logo from '../assets/logo.png'
 const Footer = () => {
   return (
     <div>
-      <footer className="footer sm:footer-horizontal p-10 mt-10">
+      <footer className="footer sm:footer-horizontal p-10 mt-10 animate__animated animate__fadeInUp">
         <aside>
           <a className="text-2xl cursor-pointer font-bold text-purple-500 italic">
             <img className="w-30" src={logo} alt="logo" />

@@ -1,18 +1,23 @@
 import { Link } from "react-router-dom";
+import 'animate.css';
 
 const AdventureCard = (props) => {
-    const {adventure} = props || {};
-    return (
-        <div className="card rounded-none bg-gray-900 hover:shadow shadow-gray-700 transition-transform duration-700 hover:scale-105">
+  const { adventure } = props || {};
+  return (
+    <div className="card rounded-none animate__animated animate__slideInUp --animate-delay: 0.5s  bg-gray-900 hover:shadow shadow-gray-700 transition-transform duration-700 hover:scale-105">
       <figure className="h-full ">
-        <img className="h-[200px] md:h-[300px] w-full" src={adventure.image} alt="" />
+        <img
+          className="h-[200px] md:h-[300px] w-full"
+          src={adventure.image}
+          alt=""
+        />
       </figure>
       <div className="card-body  transition duration-500">
         <h2 className="card-title text-xl">{adventure.title}</h2>
         <ul className="text-gray-200">
-            {
-                adventure.ecoFriendlyFeatures.map((feature,idx) => <li key={idx}>{feature}</li>)
-            }
+          {adventure.ecoFriendlyFeatures.map((feature, idx) => (
+            <li key={idx}>{feature}</li>
+          ))}
         </ul>
         <div className="card-actions mt-4">
           <Link
@@ -24,7 +29,7 @@ const AdventureCard = (props) => {
         </div>
       </div>
     </div>
-    );
+  );
 };
 
 export default AdventureCard;

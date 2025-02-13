@@ -55,7 +55,7 @@ const Navbar = () => {
       {pathname === "/" && (
         <div>
           <nav className="flex justify-center pt-3">
-            <p className="text-red-500 font-medium animate-pulse">
+            <p className="text-red-500 animate__animated animate__fadeInDown animate__repeat-1	 font-medium animate-pulse">
               Discover Hidden River Treasures – Start Your Journey!
             </p>
           </nav>
