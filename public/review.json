@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Olivia",
+    "review": "The river adventure was breathtaking! Loved every moment of it.",
+    "rating": 5,
+    "image": "https://i.ibb.co.com/7VydcZ6/michael-dam-m-EZ3-Po-FGs-k-unsplash.jpg"
+  },
+  {
+    "name": "Jane Smith",
+    "review": "A perfect getaway for nature lovers. Highly recommend this experience!",
+    "rating": 4,
+    "image": "https://i.ibb.co.com/mSPVGsM/r-5.jpg"
+  },
+  {
+    "name": "Michael Lee",
+    "review": "The staff was super friendly, and the adventure was well-organized.",
+    "rating": 5,
+    "image": "https://i.ibb.co.com/kgrC7gX/r-4.jpg"
+  },
+  {
+    "name": "Emily Davis",
+    "review": "Great experience overall, but the weather was not in our favor.",
+    "rating": 3,
+    "image": "https://i.ibb.co.com/4JYMnmt/r-7.jpg"
+  },
+  {
+    "name": "Chris Johnson",
+    "review": "The river views were absolutely stunning! I will definitely come back.",
+    "rating": 5,
+    "image": "https://i.ibb.co.com/6Pq2TW2/r-3.webp"
+  }
+]

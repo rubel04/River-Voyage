@@ -11,7 +11,7 @@ const Adventures = () => {
 
   return (
     <div className="">
-      <div className="my-4 md:my-14">
+      <div className="my-4 md:my-14 animate__animated animate__fadeInRight --animate-delay: 0.5s">
         <p className="text-center uppercase text-sm font-medium text-purple-500">Experience</p>
         <h2 className="text-2xl md:text-4xl font-bold text-center">
           Explore Adventures Experience

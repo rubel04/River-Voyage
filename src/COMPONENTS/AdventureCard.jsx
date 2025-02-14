@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import 'animate.css';
+import { IoIosArrowForward } from "react-icons/io";
 
 const AdventureCard = (props) => {
   const { adventure } = props || {};
@@ -16,7 +17,7 @@ const AdventureCard = (props) => {
         <h2 className="card-title text-xl">{adventure.title}</h2>
         <ul className="text-gray-200">
           {adventure.ecoFriendlyFeatures.map((feature, idx) => (
-            <li key={idx}>{feature}</li>
+            <li className="flex items-center" key={idx}><IoIosArrowForward className="font-extrabold text-xl animate-pulse" /> {feature}</li>
           ))}
         </ul>
         <div className="card-actions mt-4">

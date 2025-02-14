@@ -9,7 +9,7 @@ const News = () => {
   }, []);
   return (
     <div>
-      <div className="my-4 md:my-14">
+      <div className="my-4 md:my-14 animate__animated animate__fadeInLeft --animate-delay: 0.5s">
         <p className="text-center uppercase text-sm font-medium text-purple-500">
           Our Blogs
         </p>
@@ -26,8 +26,8 @@ const News = () => {
         {allNews.map((news) => (
           <div
             key={news}
-            // animate__animated animate__slideInUp --animate-delay: 0.5s transition-transform duration-700 hover:scale-105 bg-gray-900 hover:shadow shadow-gray-700
-            className="card rounded-none"
+            // animate__animated animate__slideInUp --animate-delay: 0.5s transition-transform duration-700 hover:scale-105 bg-gray-900 hover:shadow shadow-gray-700 
+            className="card rounded-none animate__animated animate__slideInUp --animate-delay: 0.5s"
           >
             <figure>
               <img

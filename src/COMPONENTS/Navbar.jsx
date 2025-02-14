@@ -9,7 +9,6 @@ const Navbar = () => {
     logOutUser()
       .then(() => {
         setUser(null);
-        alert("user logout successfully");
       })
       .catch((error) => {
         console.log(error.code);

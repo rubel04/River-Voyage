@@ -1,6 +1,6 @@
 import { CiFacebook, CiLinkedin, CiTwitter } from "react-icons/ci";
 import { FaInstagram } from "react-icons/fa";
-import logo from '../assets/logo.png'
+import logo from "../assets/logo.png";
 
 const Footer = () => {
   return (
@@ -27,18 +27,30 @@ const Footer = () => {
         <nav>
           <h6 className="text-2xl text-white font-medium">Social Link</h6>
           <div className="flex gap-3 text-2xl">
-            <p className="text-purple-500 cursor-pointer">
+            <a
+              href="https://www.facebook.com/rubelislam04"
+              className="text-purple-500 cursor-pointer"
+            >
               <CiFacebook />
-            </p>
-            <p className="text-purple-500 cursor-pointer">
+            </a>
+            <a
+              href="https://www.instagram.com/rubelislam04?igsh=NWE4cGpxdjc5NTVp"
+              className="text-purple-500 cursor-pointer"
+            >
               <FaInstagram />
-            </p>
-            <p className="text-purple-500 cursor-pointer">
+            </a>
+            <a
+              href="https://x.com/LearnerRubel?t=Z-_BSMIRJ-1s_oy5Gf7Fpw&s=09"
+              className="text-purple-500 cursor-pointer"
+            >
               <CiTwitter />
-            </p>
-            <p className="text-purple-500 cursor-pointer">
+            </a>
+            <a
+              href="https://www.linkedin.com/in/rubel-islam-bbb2a5317?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+              className="text-purple-500 cursor-pointer"
+            >
               <CiLinkedin />
-            </p>
+            </a>
           </div>
         </nav>
       </footer>
