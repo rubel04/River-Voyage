@@ -26,7 +26,6 @@ const News = () => {
         {allNews.map((news) => (
           <div
             key={news}
-            // animate__animated animate__slideInUp --animate-delay: 0.5s transition-transform duration-700 hover:scale-105 bg-gray-900 hover:shadow shadow-gray-700 
             className="card rounded-none animate__animated animate__slideInUp --animate-delay: 0.5s"
           >
             <figure>
@@ -37,7 +36,7 @@ const News = () => {
               />
             </figure>
             <div className="card-body  transition duration-500 p-0 mt-4">
-              <h2 className="card-title text-xl text-[#11bfbc] hover:underline transition">
+              <h2 className="card-title text-xl text-white hover:underline transition">
                 {news.title}
               </h2>
               <p className="text-gray-300 text-base italic">

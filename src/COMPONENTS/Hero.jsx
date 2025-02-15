@@ -1,48 +1,68 @@
+import { Swiper, SwiperSlide } from "swiper/react";
+// import "swiper/css";
+// import "swiper/css/pagination";
+import { Pagination, Navigation, Autoplay } from "swiper/modules";
+import "swiper/css/navigation";
 const Hero = () => {
   return (
-    <div className="carousel w-full">
-      <div id="slide1" className="carousel-item relative w-full md:h-[600px]">
-        <img
-          src="https://res.cloudinary.com/daxjoqam6/image/upload/v1739286878/banner-2_npre7l.webp"
-          className="w-full"
-        />
-        <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-          <a href="#slide3" className="btn btn-circle">
-            ❮
-          </a>
-          <a href="#slide2" className="btn btn-circle">
-            ❯
-          </a>
-        </div>
-      </div>
-      <div id="slide2" className="carousel-item relative w-full md:h-[600px]">
-        <img
-          src="https://res.cloudinary.com/daxjoqam6/image/upload/v1739286877/banner-3_k6smry.webp"
-          className="w-full"
-        />
-        <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-          <a href="#slide1" className="btn btn-circle">
-            ❮
-          </a>
-          <a href="#slide3" className="btn btn-circle">
-            ❯
-          </a>
-        </div>
-      </div>
-      <div id="slide3" className="carousel-item relative w-full md:h-[600px]">
-        <img
-          src="https://res.cloudinary.com/daxjoqam6/image/upload/v1739286877/banner-1_nkzox6.webp"
-          className="w-full"
-        />
-        <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-          <a href="#slide2" className="btn btn-circle">
-            ❮
-          </a>
-          <a href="#slide1" className="btn btn-circle">
-            ❯
-          </a>
-        </div>
-      </div>
+    <div>
+      <Swiper
+        slidesPerView={1}
+        spaceBetween={30}
+        loop={true}
+        pagination={{
+          clickable: true,
+        }}
+        autoplay={{
+          delay: 2000,
+          disableOnInteraction: false,
+        }}
+        navigation={true}
+        modules={[Autoplay, Pagination, Navigation]}
+        className="mySwiper"
+      >
+        <SwiperSlide>
+          <div className="relative">
+            {/* <video className="w-full" autoPlay src={video1} loop muted></video> */}
+            <img
+              src="https://res.cloudinary.com/daxjoqam6/image/upload/v1739286878/banner-2_npre7l.webp"
+              className="w-full"
+            />
+            <div className="absolute flex items-center justify-center inset-0 bg-black/20">
+              <h1 className="text-2xl md:text-6xl font-bold text-center">
+                Experience Nature’s Hidden Pathways
+              </h1>
+            </div>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="relative">
+            {/* <video className="w-full" autoPlay src={video2} loop muted></video> */}
+            <img
+              src="https://res.cloudinary.com/daxjoqam6/image/upload/v1739286877/banner-3_k6smry.webp"
+              className="w-full"
+            />
+            <div className="absolute flex items-center justify-center inset-0 bg-black/20">
+              <h1 className="text-2xl md:text-6xl font-bold text-center">
+                Experience Nature’s Hidden Pathways
+              </h1>
+            </div>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="relative">
+            {/* <video className="w-full" autoPlay src={video3} loop muted></video> */}
+            <img
+              src="https://res.cloudinary.com/daxjoqam6/image/upload/v1739286877/banner-1_nkzox6.webp"
+              className="w-full"
+            />
+            <h1 className="text-6xl font-bold absolute flex items-center justify-center inset-0 bg-black/10">
+              Welcome to River Voyage
+            </h1>
+            <p></p>
+          </div>
+        </SwiperSlide>
+      </Swiper>
     </div>
   );
 };

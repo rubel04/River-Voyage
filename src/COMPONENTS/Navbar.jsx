@@ -10,8 +10,8 @@ const Navbar = () => {
       .then(() => {
         setUser(null);
       })
-      .catch((error) => {
-        console.log(error.code);
+      .catch(() => {
+        // console.log(error.code);
       });
   };
   const navlinks = (
@@ -26,38 +26,40 @@ const Navbar = () => {
           Home
         </NavLink>
       </li>
-      <li>
-        <NavLink
-          className={({ isActive }) =>
-            isActive ? "text-purple-500" : "text-white"
-          }
-          to="/updateProfile"
-        >
-          Update Profile
-        </NavLink>
-      </li>
-      <li>
-        <NavLink
-          className={({ isActive }) =>
-            isActive ? "text-purple-500" : "text-white"
-          }
-          to="/myProfile"
-        >
-          My Profile
-        </NavLink>
-      </li>
+      {user && (
+        <li>
+          <NavLink
+            className={({ isActive }) =>
+              isActive ? "text-purple-500" : "text-white"
+            }
+            to="/updateProfile"
+          >
+            Update Profile
+          </NavLink>
+        </li>
+      )}
+      {user && (
+        <li>
+          <NavLink
+            className={({ isActive }) =>
+              isActive ? "text-purple-500" : "text-white"
+            }
+            to="/myProfile"
+          >
+            My Profile
+          </NavLink>
+        </li>
+      )}
     </>
   );
   const { pathname } = useLocation();
   return (
     <div>
       {pathname === "/" && (
-        <div>
-          <nav className="flex justify-center pt-3">
-            <p className="text-red-500 animate__animated animate__fadeInDown animate__repeat-1	 font-medium animate-pulse">
-              Discover Hidden River Treasures – Start Your Journey!
-            </p>
-          </nav>
+        <div className="pt-4">
+          <marquee direction="" width="60%" className="font-bold block m-auto">
+            Discover Hidden River Treasures – Start Your Journey!
+          </marquee>
           <div className="border border-gray-600 my-4"></div>
         </div>
       )}
@@ -101,7 +103,11 @@ const Navbar = () => {
             <div className="flex items-center gap-4">
               <div className="dropdown dropdown-hover">
                 <div tabIndex={0} role="button" className="">
-                  <img className="w-13 h-13 border-2 cursor-pointer rounded-full" src={user?.photoURL} alt="user-image" />
+                  <img
+                    className="w-13 h-13 border-2 cursor-pointer rounded-full"
+                    src={user?.photoURL}
+                    alt="user-image"
+                  />
                 </div>
                 <ul
                   tabIndex={0}

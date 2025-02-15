@@ -4,7 +4,7 @@ import { AuthContext } from "../providers/AuthProvider";
 
 const MyProfile = () => {
   const { user } = useContext(AuthContext);
-  console.log(user);
+  // console.log(user);
 
   return (
     <div className="min-h-screen flex items-center justify-center">

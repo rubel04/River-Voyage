@@ -60,6 +60,7 @@ const AuthProvider = (props) => {
         user,
         setUser,
         isLoading,
+        setIsLoading,
         resetPassword
     }
     return (

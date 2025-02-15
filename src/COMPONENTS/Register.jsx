@@ -20,7 +20,7 @@ const Register = () => {
     const photo = form.photo.value;
     const email = form.email.value;
     const password = form.password.value;
-    console.log({ email, password });
+    // console.log({ email, password });
     if (!/[A-Z]/.test(password)) {
       setError("Your password should have at least one uppercase characters");
       return;
@@ -42,20 +42,20 @@ const Register = () => {
       })
       .catch((error) => {
         setError(error.message);
-        console.log(error);
+        // console.log(error);
       });
   };
 
   const handleGoogleLogin = () => {
     loginUserWithGoogle()
       .then((result) => {
-        console.log(result.user);
+        // console.log(result.user);
         setUser(result.user);
         setSuccess("User login sucessfully");
         location.state ? navigate(location.state) : navigate("/");
       })
       .catch((error) => {
-        console.log(error);
+        // console.log(error);
         setError(error.message);
       });
   };

@@ -1,7 +1,6 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
-// import "./styles.css";
 import { Pagination } from "swiper/modules";
 import { useEffect, useState } from "react";
 const Review = () => {
@@ -11,7 +10,7 @@ const Review = () => {
       .then((res) => res.json())
       .then((data) => setAllReviews(data));
   }, []);
-  console.log(allReviews.length);
+  // console.log(allReviews.length);
   return (
     <div>
       <div className="my-4 md:my-14 animate__animated animate__fadeInRight --animate-delay: 0.5s">

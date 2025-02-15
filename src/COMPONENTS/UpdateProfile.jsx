@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { auth } from "../firebase/firebase.config";
 
 const UpdateProfile = () => {
-  const { updateUserProfile, setUser } = useContext(AuthContext);
+  const { updateUserProfile, setUser ,setIsLoading } = useContext(AuthContext);
   const navigate = useNavigate();
 
   const handleUpdateProfile = (e) => {
@@ -13,12 +13,13 @@ const UpdateProfile = () => {
     const photo = e.target.photo.value;
     updateUserProfile({ name, photo })
       .then(() => {
-        console.log(auth.currentUser);
+        // console.log(auth.currentUser);
         setUser(auth.currentUser);
+        setIsLoading(false)
         navigate("/myProfile");
       })
-      .catch((error) => {
-        console.log(error);
+      .catch(() => {
+        // console.log(error);
       });
   };
   return (
@@ -27,7 +28,6 @@ const UpdateProfile = () => {
         <form onSubmit={handleUpdateProfile} className="mt-8 text-center">
           <div className="flex items-center">
             <div>
-              <label>Name</label>
               <br />
               <input
                 className="py-3 mr-4 px-4 bg-gray-200 text-gray-600 border-none"
@@ -37,7 +37,6 @@ const UpdateProfile = () => {
               />
             </div>
             <div>
-              <label>Photo</label>
               <br />
               <input
                 className="py-3 mr-4 px-4 bg-gray-200 text-gray-600 border-none"
