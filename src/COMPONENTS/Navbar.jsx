@@ -38,7 +38,6 @@ const Navbar = () => {
           </NavLink>
         </li>
       )}
-      {user && (
         <li>
           <NavLink
             className={({ isActive }) =>
@@ -49,7 +48,6 @@ const Navbar = () => {
             My Profile
           </NavLink>
         </li>
-      )}
     </>
   );
   const { pathname } = useLocation();
