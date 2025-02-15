@@ -44,7 +44,7 @@ const Hero = () => {
             />
             <div className="absolute flex items-center justify-center inset-0 bg-black/20">
               <h1 className="text-2xl md:text-6xl font-bold text-center">
-                Experience Nature’s Hidden Pathways
+              Discover Uncharted River Wonders
               </h1>
             </div>
           </div>
@@ -56,9 +56,9 @@ const Hero = () => {
               src="https://res.cloudinary.com/daxjoqam6/image/upload/v1739286877/banner-1_nkzox6.webp"
               className="w-full"
             />
-            <h1 className="text-6xl font-bold absolute flex items-center justify-center inset-0 bg-black/10">
-              Welcome to River Voyage
-            </h1>
+            <h1 className="text-2xl md:text-6xl font-bold text-center">
+            Adventure Awaits on Every Current
+              </h1>
             <p></p>
           </div>
         </SwiperSlide>
